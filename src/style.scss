@@ -201,3 +201,73 @@ $color4:rgb(0, 0, 0);
     }
    
 }
+
+//-----CONTACT-----
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    .greetings{
+        font-size: 2rem;
+    }
+
+    .map-wrapper{
+        @media (max-width: 601px) {
+            height: 300px;
+            width: 300px;
+          }
+        height: 350px;
+        width: 500px;
+    }
+    .number{
+        font-size: 1.45rem;
+    }
+    .number::before{
+        
+    }
+    .mail{
+        font-size: 1.15rem;
+    }
+    .map{
+       
+        width: 100%;
+        height: 100%;
+        border: 4px solid black;
+        
+        border-radius: 10px;
+        background-color: black;
+
+        transition: 3s;
+        
+    }
+    .map-inv{
+        transform:scale(0);
+        
+    }
+    
+
+
+
+    .button{
+        
+        background-color: red;
+        border: none;
+        color: white;
+        width: fit-content;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 1.3rem;
+        transition: 2s;
+    }
+
+    .button:hover{
+        cursor: pointer;
+        transform: scale(1.14);
+        transition: 2s;
+    }
+}

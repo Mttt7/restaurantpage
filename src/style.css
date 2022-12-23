@@ -169,4 +169,60 @@ table {
 .menu-wrapper .menu .dish .price {
   font-weight: 700;
   color: rgb(46, 25, 235);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.wrapper .greetings {
+  font-size: 2rem;
+}
+.wrapper .map-wrapper {
+  height: 350px;
+  width: 500px;
+}
+@media (max-width: 601px) {
+  .wrapper .map-wrapper {
+    height: 300px;
+    width: 300px;
+  }
+}
+.wrapper .number {
+  font-size: 1.45rem;
+}
+.wrapper .mail {
+  font-size: 1.15rem;
+}
+.wrapper .map {
+  width: 100%;
+  height: 100%;
+  border: 4px solid black;
+  border-radius: 10px;
+  background-color: black;
+  transition: 3s;
+}
+.wrapper .map-inv {
+  transform: scale(0);
+}
+.wrapper .button {
+  background-color: red;
+  border: none;
+  color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.3rem;
+  transition: 2s;
+}
+.wrapper .button:hover {
+  cursor: pointer;
+  transform: scale(1.14);
+  transition: 2s;
 }/*# sourceMappingURL=style.css.map */
