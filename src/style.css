@@ -1,0 +1,136 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#content {
+  background-color: rgb(211, 68, 25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Martian Mono", monospace;
+}
+
+.home-wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home-wrapper .hero-img {
+  width: 500px;
+}
+.home-wrapper .contact-wrapper {
+  font-size: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.home-wrapper .contact-wrapper .invitation-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.home-wrapper .contact-wrapper .button {
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+.menu-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 60%;
+}
+.menu-wrapper .menu {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  row-gap: 30px;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 50%));
+}
+.menu-wrapper .menu .dish {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 500px;
+  width: 250px;
+  padding: 10px;
+  border: 3px solid rgb(227, 213, 16);
+  border-radius: 10px;
+  background-color: rgb(227, 213, 16);
+  color: rgb(211, 68, 25);
+}
+.menu-wrapper .menu .dish .name {
+  font-size: 1.8rem;
+  padding: 10px;
+  font-weight: 700;
+}
+.menu-wrapper .menu .dish .photo {
+  width: 100%;
+}
+.menu-wrapper .menu .dish .description {
+  flex: 1 0 auto;
+  padding: 10px;
+}
+.menu-wrapper .menu .dish .price {
+  font-weight: 700;
+  color: rgb(46, 25, 235);
+}/*# sourceMappingURL=style.css.map */
