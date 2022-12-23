@@ -7,10 +7,14 @@ export default function drawHome(){
     
 
         //HERO IMG
+        const heroImgWrapper = document.createElement('div')
+        heroImgWrapper.classList.add('hero-img-wrapper')
         const heroImg = new Image()
         heroImg.src = Breakfast
         heroImg.classList.add("hero-img")
-        container.appendChild(heroImg)
+        container.appendChild(heroImgWrapper)
+        heroImgWrapper.appendChild(heroImg)
+        
 
 
         //CONTACT
