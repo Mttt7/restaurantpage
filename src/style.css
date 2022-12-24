@@ -51,6 +51,9 @@ table {
 .main {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1 0 auto;
   width: 100%;
   height: 100%;
 }
@@ -65,7 +68,7 @@ table {
 }
 
 .home-wrapper {
-  height: 100vh;
+  height: calc(100vh - 120px - 105px);
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -107,9 +110,10 @@ table {
   font-size: 1.9rem;
 }
 .home-wrapper .contact-wrapper .button {
-  background-color: red;
+  background-color: rgb(227, 213, 16);
   border: none;
-  color: white;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
   padding: 10px 20px;
   border-radius: 5px;
   text-decoration: none;
@@ -179,12 +183,12 @@ table {
 }
 
 .wrapper {
-  height: 100%;
+  height: calc(100vh - 120px - 55px);
   flex: 1 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 1rem;
 }
 .wrapper .greetings {
@@ -215,9 +219,6 @@ table {
   border-radius: 10px;
   background-color: black;
   transition: 3s;
-}
-.wrapper .map-inv {
-  transform: scale(0);
 }
 .wrapper .button {
   background-color: red;

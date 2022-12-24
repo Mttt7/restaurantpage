@@ -49,9 +49,15 @@ $color2:rgb(211, 68, 25);
 $color3:rgb(227, 213, 16);
 $color4:rgb(0, 0, 0);
 $header-height:120px;
+body{
+
+}
 .main{
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex:1 0 auto;
     width: 100%;
     height: 100%;
 }
@@ -69,7 +75,8 @@ $header-height:120px;
 
 // - - - HOME - - -
 .home-wrapper{
-    height: 100vh;
+
+    height: calc(100vh - $header-height - 105px);
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -121,9 +128,10 @@ $header-height:120px;
             
             .button{
                 
-                background-color: red;
+                background-color: $color3;
                 border: none;
-                color: white;
+                color: rgb(0, 0, 0);
+                font-weight: 500;
                 padding: 10px 20px;
                 border-radius: 5px;
                 text-decoration: none;
@@ -222,13 +230,14 @@ $header-height:120px;
 //-----CONTACT-----
 
 .wrapper{
+    height: calc(100vh - $header-height - 55px);
     //height: calc(100vh - $header-height);
-    height: 100%;
+    //height: 100%;
     flex:1 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 1rem;
 
     .greetings{
@@ -266,10 +275,11 @@ $header-height:120px;
         transition: 3s;
         
     }
-    .map-inv{
-        transform:scale(0);
+    // .map-inv{
+    //     visibility: hidden;
+    //     //transform:scale(0);
         
-    }
+    // }
     
 
 
@@ -340,6 +350,7 @@ $header-height:120px;
 
 //-----FOOTER-----
 .footer{
+    
     padding: 1rem 0 0 .2rem;
     background-color: $color3;
     display: flex;

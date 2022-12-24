@@ -12,16 +12,16 @@ import mapa from './images/mapa.png'
         greetings.classList.add('greetings')
         greetings.textContent = "See you at"
         wrapper.appendChild(greetings)
+        Mapa.classList.add("map")
+        //const showMapBtn = document.createElement('button')
+        // showMapBtn.textContent = "SHOW MAP"
+        // showMapBtn.classList.add("button")
+        //wrapper.appendChild(showMapBtn)
 
-        const showMapBtn = document.createElement('button')
-        showMapBtn.textContent = "SHOW MAP"
-        showMapBtn.classList.add("button")
-        wrapper.appendChild(showMapBtn)
-
-        showMapBtn.addEventListener('click',()=>{
-            Mapa.classList.remove("map-inv")
-            Mapa.classList.add("map")
-        })
+        // showMapBtn.addEventListener('click',()=>{
+        //     Mapa.classList.remove("map-inv")
+        //     Mapa.classList.add("map")
+        // })
 
         const mapWrapper = document.createElement('div')
         wrapper.appendChild(mapWrapper)
