@@ -48,13 +48,19 @@ table {
   border-spacing: 0;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
 #content {
-  height: 100vh;
+  height: 100%;
   background-color: rgb(211, 68, 25);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-family: "Martian Mono", monospace;
 }
 
@@ -117,20 +123,21 @@ table {
 }
 
 .menu-wrapper {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
+  justify-items: center;
+  padding: 20px;
 }
 .menu-wrapper .menu {
+  grid-column: 2;
   width: 100%;
   height: 100%;
   display: grid;
   row-gap: 30px;
   justify-items: center;
   align-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 50%));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 @media (max-width: 601px) {
   .menu-wrapper .menu {
@@ -172,6 +179,8 @@ table {
 }
 
 .wrapper {
+  height: calc(100vh - 120px);
+  flex: 1 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -180,6 +189,7 @@ table {
 }
 .wrapper .greetings {
   font-size: 2rem;
+  padding: 10px;
 }
 .wrapper .map-wrapper {
   height: 350px;
@@ -196,6 +206,7 @@ table {
 }
 .wrapper .mail {
   font-size: 1.15rem;
+  padding: 10px;
 }
 .wrapper .map {
   width: 100%;
@@ -225,4 +236,60 @@ table {
   cursor: pointer;
   transform: scale(1.14);
   transition: 2s;
+}
+
+.header {
+  width: 100%;
+  height: 120px;
+  background-color: rgb(227, 213, 16);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header .logo {
+  font-family: "Pacifico", cursive;
+  flex: 1 0 auto;
+  display: flex;
+  align-items: center;
+  font-size: 2.5rem;
+  font-style: italic;
+  padding: 10px;
+  padding-bottom: 0;
+}
+.header .choose-bar {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+.header .choose-bar > * {
+  padding: 15px;
+  padding-top: 0;
+}
+
+.footer {
+  padding: 1rem 0 0 0.2rem;
+  background-color: rgb(227, 213, 16);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.footer .footer-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer .footer-icons > * {
+  transition: 2s;
+}
+.footer .footer-icons > *:hover {
+  transform: scale(1.2);
+  transition: 2s;
+}
+.footer .footer-icons .ig-icon {
+  width: 28px;
+}
+.footer .footer-icons .github-icon {
+  width: 80px;
 }/*# sourceMappingURL=style.css.map */

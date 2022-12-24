@@ -1,5 +1,5 @@
 
-export default function drawContact(){
+ function drawContact(){
 
     const wrapper = document.createElement('div')
     wrapper.classList.add('wrapper')
@@ -39,10 +39,17 @@ export default function drawContact(){
         wrapper.appendChild(number)
 
         const mail = document.createElement('div')
-        mail.textContent= "mwcousine@restaurant.com"
+        mail.textContent= "mtcousine@restaurant.com"
         mail.classList.add('mail')
         wrapper.appendChild(mail)
 
 
     return wrapper
 }
+
+export default function loadContact(){
+    const main = document.querySelector("#main")
+    main.textContent=''
+    main.appendChild(drawContact())
+}
+

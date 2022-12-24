@@ -15,7 +15,7 @@ ZygiImg.src = zygi
 
 
 
-export default function drawMenu(){
+ function drawMenu(){
     const menu = document.createElement('div')
     menu.classList.add('menu')
     const menuWrapper = document.createElement('div')
@@ -83,4 +83,11 @@ class Dish{
 
 
 
+}
+
+export default function loadMenu(){
+    const main = document.querySelector("#main")
+    main.textContent=''
+    main.appendChild(drawMenu())
+    
 }

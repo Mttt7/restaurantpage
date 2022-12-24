@@ -1,6 +1,6 @@
 import Breakfast from './images/breakfast.jpg'
 
-export default function drawHome(){
+ function drawHome(){
     //CONTAINER
     const container = document.createElement('div')
     container.classList.add("home-wrapper")
@@ -43,21 +43,14 @@ export default function drawHome(){
             contactDiv.appendChild(seeLocationBtn)
             seeLocationBtn.classList.add("button")
 
-        
-
-    
-
-        
-        
-    
-        
-        
-
-
-
 
 
     console.log("home")
     return container
 }
 
+export default function loadHome(){
+    const main = document.querySelector("#main")
+    main.textContent=''
+    main.appendChild(drawHome())
+}
