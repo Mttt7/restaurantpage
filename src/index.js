@@ -29,9 +29,7 @@ function createHeader(){
             chHome.textContent = "HOME"
             chooseBar.appendChild(chHome)
             chHome.addEventListener('click',() => {
-                currentPage=0
-                clearWebsite()
-                InitializeWebsite()
+                loadHome()
             })
             
     
@@ -41,9 +39,7 @@ function createHeader(){
             chMenu.textContent = "MENU"
             chooseBar.appendChild(chMenu)
             chMenu.addEventListener('click',() => {
-                currentPage=1
-                clearWebsite()
-                InitializeWebsite()
+                loadMenu()
             })
     
             const chContact = document.createElement('div')
@@ -51,9 +47,7 @@ function createHeader(){
             chContact.textContent = "CONTACT"
             chooseBar.appendChild(chContact)
             chContact.addEventListener('click',() => {
-                currentPage=2
-                clearWebsite()
-                InitializeWebsite()
+                loadContact()
             })
     
     return header
@@ -80,6 +74,15 @@ function createFooter(){
                 GithubImg.classList.add("github-icon")
                 IgImg.classList.add("ig-icon")
 
+                GithubImg.addEventListener('click',()=>{
+                    window.open("https://github.com/Mttt7/restaurantpage","_self")
+                })
+                IgImg.addEventListener('click',()=>{
+                    window.open("https://www.instagram.com/mtt.jpeg/","_self")
+                })
+
+                
+
     return footer
 }
 
@@ -99,29 +102,15 @@ function InitializeWebsite(){
     content.appendChild(createMain())
     content.appendChild(createFooter())
 
-    //loadContact()
-    //loadMenu()
-    loadHome()
-}
 
-function clearWebsite(){
-    const header = document.querySelector(".header")
-    const home = document.querySelector(".home-wrapper")
-
-    if(header){
-        content.removeChild(header)
-        console.log("deleted header")
-    }
-    if(home){
-        content.removeChild(home)
-        console.log("deleted home")
-    }
 
     
-   
 }
-clearWebsite()
+
 InitializeWebsite()
+loadHome()
+
+
 
 
 

@@ -72,7 +72,7 @@ $header-height:120px;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items:center;
     padding: 20px 0px;
     .hero-img-wrapper{
@@ -118,6 +118,7 @@ $header-height:120px;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            
             .button{
                 
                 background-color: red;
@@ -145,18 +146,14 @@ $header-height:120px;
 
 
  .menu-wrapper{
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
-    // flex-direction: column;
-
+  
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     align-items: center;
     justify-items: center;
 
     
-    //width:100%;
+   
     padding: 20px;
    
     .menu{
@@ -185,7 +182,7 @@ $header-height:120px;
             flex-direction: column;
             align-items: center;
             justify-content: flex-start;
-            height: 500px;
+            height: 550px;
             width: 250px;
 
 
@@ -225,7 +222,8 @@ $header-height:120px;
 //-----CONTACT-----
 
 .wrapper{
-    height: calc(100vh - $header-height);
+    //height: calc(100vh - $header-height);
+    height: 100%;
     flex:1 0 auto;
     display: flex;
     flex-direction: column;
@@ -328,7 +326,14 @@ $header-height:120px;
         >*{
             padding: 15px;
             padding-top: 0;
+            cursor: pointer;
         }
+        >*:hover{
+            transform: scale(1.1);
+            transition: 0.3s;
+        }
+
+
     }
 }
 
@@ -348,11 +353,13 @@ $header-height:120px;
         align-items: center;
         justify-content: center;
         >*{
+            cursor: pointer;
             transition: 2s;
         }
         >*:hover{
             transform: scale(1.2);
             transition: 2s;
+            
         }
         .ig-icon{
             width: 28px;

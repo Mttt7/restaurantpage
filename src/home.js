@@ -1,4 +1,5 @@
 import Breakfast from './images/breakfast.jpg'
+import loadContact from  './contact.js'
 
  function drawHome(){
     //CONTAINER
@@ -42,6 +43,9 @@ import Breakfast from './images/breakfast.jpg'
             seeLocationBtn.innerText="SEE LOCATION"
             contactDiv.appendChild(seeLocationBtn)
             seeLocationBtn.classList.add("button")
+            seeLocationBtn.addEventListener('click',()=>{
+                loadContact()
+            })
 
 
 

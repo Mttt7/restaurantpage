@@ -22,9 +22,9 @@ ZygiImg.src = zygi
     menuWrapper.classList.add('menu-wrapper')
     
         const TomatoSoup = new Dish(TomatoSoupImg,'Tomato Soup','Lovely delicious traditional polish tomato soup made from fresh tomatoes served with home made noodles. You are gonna love it',8.50) 
-        const PolishDinner = new Dish(PolishDinnerImg,'Polish de volaille ','Chicken meat with fries and salad',29) 
-        const Pizzatopia = new Dish(PizzatopiaImg,'Pizza','classic Italian Pizza made of real italian flour and oil olive',34.0) 
-        const Zygi = new Dish(ZygiImg,'Student dish','If you are hungry brokie or just a student. It doesnt taste good. It is not fresh. Cheap',7.0) 
+        const PolishDinner = new Dish(PolishDinnerImg,'Polish de volaille ',"Our Polish De volaille with home made fries is a must-try dish at our restaurant. Slow-cooked poultry is served  with vegetables and spices, and paired with home made fries.",29) 
+        const Pizzatopia = new Dish(PizzatopiaImg,'Pizza','Try our delicious Italian pizza, made with a crispy crust and topped with the freshest ingredients. Our pizza is sure to satisfy your craving for something savory and delicious. Come and enjoy a slice at our restaurant!',34.0) 
+        const Zygi = new Dish(ZygiImg,'Student dish','If you are hungry brokie or just a student. It doesnt taste good. It is not fresh. Cheap.',7.0) 
         
         let dania = [TomatoSoup,PolishDinner,Pizzatopia,Zygi]
 
