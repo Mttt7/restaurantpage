@@ -128,20 +128,21 @@ table {
 
 .menu-wrapper {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr;
   align-items: center;
   justify-items: center;
+  width: 50%;
+  height: 100%;
   padding: 20px;
 }
 .menu-wrapper .menu {
-  grid-column: 2;
   width: 100%;
   height: 100%;
   display: grid;
   row-gap: 30px;
   justify-items: center;
   align-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
 }
 @media (max-width: 601px) {
   .menu-wrapper .menu {
