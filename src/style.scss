@@ -162,6 +162,9 @@ body{
     width: 50%;
     height: 100%;
    
+    @media (max-width: 601px) {
+        width: 100%;
+      }
     padding: 20px;
    
     .menu{
